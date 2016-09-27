@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url(../img/texture.png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+header {
+    margin-top: 10px;
+}
+
+hr {
+    border: solid 2px #7d97ad;
+}
+
+img {
+    margin: 0 auto;
+}
+
+.carousel-image {
+    min-width: 100%;
+}
+
+.featured-work-header{
+    color: #7d97ad;
+}
+
+.figcaption {
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+.main {
+    background-color: white;
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+.name {
+    font-weight: 900;
+}
+
+.name-container {
+    text-transform: uppercase;
+    color: #2d3c49;
+}
+
+.profile-picture {
+    float: left;
+    width: 150px;
+    /*padding: 10px;*/
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .profile-picture {
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .name-container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .featured-work {
+        text-align: center;
+    }
+
+    .featured-work-header {
+        letter-spacing: 3px;
+    }
+
+    .work-image {
+        width: 80%;
+    }
+
+    .work-item {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .work-image {
+        width: 100%;
+    }
+}
